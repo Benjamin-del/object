@@ -1,0 +1,50 @@
+body {
+    font-family: sans-serif;
+}
+
+canvas {
+    width: 100%;
+}
+
+video {
+    width: 100%;
+
+}
+
+p {
+    font-size: 2.5vh;
+    text-align: center;
+}
+
+button {
+    width: 100%;
+    background: dodgerblue;
+    border: 0px;
+    font-size: 2.5vh;
+    font-weight: 900;
+    margin-top: 10px;
+    padding: 10px;
+    color: white;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.fileUPLD {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background: dodgerblue;
+    border: 0px;
+    font-size: 2.5vh;
+    font-weight: 900;
+    margin-top: 10px;
+    padding: 10px;
+    color: white;
+}
+
+.multiBTN {
+    display: flex;
+    gap: 3%;
+}

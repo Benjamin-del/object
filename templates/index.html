@@ -1,0 +1,31 @@
+<html>
+
+<head>
+   <title>Open webcam using JavaScript. </title>
+   <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+   <div id="takePhotoDV">
+      <video id="videoCam" playsinline></video>
+      <div class="multiBTN">
+         <button id="takePhoto" onclick="takePhoto()">Take Photo</button>
+         <label for="fileUpload" class="fileUPLD">
+            Upload Photo
+         </label>
+         <input type="file" id="fileUpload" accept="image/*" onchange="uploadPhoto(this)">
+      </div>
+   </div>
+   <p id="response" style="display: none;"></p>
+   <button id="actBtn" style="display: none;"></button>
+   <div id="showPhotoDV" style="display: none;">
+      <canvas id="canvas" ></canvas>
+      <div class="multiBTN">
+         <button id="saveBtn" onclick="submitPhoto()">Submit</button>
+         <button id="retakeBtn" onclick="retakePhoto()">Retake</button>
+      </div>
+   </div>
+   </div>
+   <script src="/static/script.js"></script>
+</body>
+</html>
