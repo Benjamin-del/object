@@ -36,8 +36,6 @@ app.config['BASIC_AUTH_PASSWORD'] = config["password"]
 
 basic_auth = BasicAuth(app)
 
-
-
 def getLabel(index):
     return labels[index]
 
@@ -92,16 +90,6 @@ def upload():
 @basic_auth.required
 def index():
     return render_template('index.html')
-
-@app.route("/dlg")
-@basic_auth.required
-def dlg():
-    return render_template('dlg.html')
-
-@app.route("/demo")
-@basic_auth.required
-def demo():
-    return render_template('demo.html')
 
 app.config['TEMPLATES_AUTO_RELOAD'] = True
 app.run(debug=True, host='0.0.0.0', ssl_context='adhoc')
